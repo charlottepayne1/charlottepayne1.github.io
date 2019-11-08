@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+
+body {
+  font: 16px/1.5 sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+h1 {
+  font-family: 'Anton', sans-serif;
+}
+
+.grid {
+        display: grid;
+        grid-template-columns: 3fr [content-start] 3fr [content-end];
+        grid-template-rows: 200px [content-start] 200px [content-end];
+        grid-column-gap: 20px;
+        grid-row-gap: 30px;
+        max-width: 960px;
+}
+
+a:active {
+  color: rgb(233,87,80);
+}
+
+a:visited {
+  color: rgb(236,60,57);
+}
+
+a:hover {
+  color: rgb(5,6,6)
+}
+
+nav {
+  position:fixed;
+  width: 100%;
+  top:0;
+  left:0;
+  background-color: rgb(156,164,178);
+  z-index: 10;
+}
+
+nav ul {
+      padding-left: 20px;
+      list-style: none;
+    }
+
+nav li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+section {
+  width: 600px;
+  border: 2px solid rgb(41,42,55);
+  overflow: auto;
+  height: auto;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#box01 {
+  float:left;
+  margin-right: 10px;
+}
+
+#box02 {
+  float:right;
+}
+
+#box03 {
+  float:left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+#majoring h2 {
+  color: rgb(255,38,49);
+}
+
+#anchor h2 {
+  color: rgb(255,38,49);
+}
+
+#grass h2 {
+  color: rgb(255,38,49);
+}
+
+#find h2 {
+  color: rgb(255,38,49);
+}
+
+#communication {
+  font-style: italic;
+}
+
+#september {
+  font-style: italic;
+}
+
+#may {
+  font-style: italic;
+}
+
+#h1 img {
+  border-color: rgb(218,58,51);
+  }
+
+p {
+  margin-top: 0;
+}
+
+header a:visited {
+  background-color: #444;
+  color: #eee;
