@@ -2,97 +2,195 @@
 @import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
 
 body {
-  font: 16px/1.5 sans-serif;
+  font-size: 16px;
   font-family: 'Noto Sans KR', sans-serif;
 }
 
 h1 {
   font-family: 'Anton', sans-serif;
+  font-size: 50px;
+  color: #F92020;
+  text-align: center;
 }
 
-.grid {
-        display: grid;
-        grid-template-columns: 3fr [content-start] 3fr [content-end];
-        grid-template-rows: 200px [content-start] 200px [content-end];
-        grid-column-gap: 20px;
-        grid-row-gap: 30px;
-        max-width: 960px;
-}
-
-a:active {
-  color: rgb(233,87,80);
+a:link {
+color: rgb(0,0,0);
 }
 
 a:visited {
-  color: rgb(236,60,57);
+color: #918C87;
 }
 
 a:hover {
-  color: rgb(5,6,6)
+color: #F92020;
+}
+
+a:active {
+color: rgb(0,0,0);
 }
 
 nav {
-  position:fixed;
-  width: 100%;
-  top:0;
-  left:0;
-  background-color: rgb(156,164,178);
-  z-index: 10;
+  border-bottom: 1px solid #918C87;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 nav ul {
-      padding-left: 20px;
-      list-style: none;
-    }
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 
 nav li {
-      display: inline;
-      margin-right: 20px;
-    }
-
-section {
-  width: 600px;
-  border: 2px solid rgb(41,42,55);
-  overflow: auto;
-  height: auto;
-  margin-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+  display: inline-block;
+  margin-right: 5px;
+  margin-top: 5px;
 }
 
-#box01 {
-  float:left;
-  margin-right: 10px;
+h3 {
+  color: #F92020;
 }
 
-#box02 {
-  float:right;
+h2 {
+  color: #F92020;
+  font-size: 15px;
 }
 
-#box03 {
-  float:left;
-  margin-right: 10px;
+footer {
+  font-size: 12px;
+}
+
+#wrapper {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 960px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 10px;
+  margin-top: 10px;
+  width: 20%;
+  border: 4px solid gray;
 }
 
-#majoring h2 {
-  color: rgb(255,38,49);
+.studio {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: 30%;
+  border: 4px solid gray;
 }
 
-#anchor h2 {
-  color: rgb(255,38,49);
+.studiob {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  text-align: center;
+  color: #F92020;
+  font-size: 17px;
 }
 
-#grass h2 {
-  color: rgb(255,38,49);
+.grid {
+  display: grid;
+  grid-template-columns: 500px 500px 350px;
+  grid-template-row: 100px 100px 100px;
+  grid-gap: 10px;
+  background-color: #fff;
+  color: #444;
 }
 
-#find h2 {
-  color: rgb(255,38,49);
+#boxa {
+  background-color: #918C87;
+  color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 100%;
+}
+
+#boxb {
+  background-color: #918C87;
+  color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 100%;
+}
+
+#boxc {
+  background-color: #918C87;
+  color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 100%;
+}
+
+#sportsdesk {
+  font-style: italic;
+  display: block;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  width: 30%;
+  border: 4px solid gray;
+}
+
+#miami {
+  font-style: italic;
+  display: block;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  width: 30%;
+  border: 4px solid gray;
+}
+
+#olympic {
+  font-style: italic;
+  display: block;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  width: 30%;
+  border: 4px solid gray;
+}
+
+#baseball {
+  font-style: italic;
+  display: block;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  width: 30%;
+  border: 4px solid gray;
+}
+
+#reach {
+  text-align: center;
+  margin-top: 100px;
 }
 
 #communication {
   font-style: italic;
+}
+
+#presidential {
+  display: absolute;
+  margin-left: 360px;
+  margin-bottom: 10px;
+  width: 50%;
+  text-align: justify;
+  text-align: center;
+  border-left: 4px solid red;
+  padding-left: 4px;
+}
+
+#scholar {
+  text-align: center;
 }
 
 #september {
@@ -103,14 +201,29 @@ section {
   font-style: italic;
 }
 
-#h1 img {
-  border-color: rgb(218,58,51);
-  }
-
-p {
-  margin-top: 0;
+#first {
+  display: absolute;
+  padding: center;
 }
 
-header a:visited {
-  background-color: #444;
-  color: #eee;
+#second {
+  display: absolute;
+  padding: center;
+}
+
+#third {
+  display: absolute;
+  padding: center;
+}
+
+#fourth {
+  display: absolute;
+  padding: center;
+}
+
+#bkg {
+  background-image: url("../img/shoulders.png");
+  background-position: 40px 150px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
